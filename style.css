@@ -21,6 +21,7 @@ h1 {
 button {
     border-radius: 8px;
     padding: 5px 10px;
+    background-color: rgb(238, 232, 232);
 }
 
 button:hover {
@@ -63,8 +64,6 @@ tr:nth-child(1) {
     margin-bottom: 20px;
     width: 40%;
 }
-
-
 
 #time, #leaderboardLink {
     background-color: rgb(72, 180, 114);
@@ -128,6 +127,10 @@ tr:nth-child(1) {
 
     #submit {
         margin-top: 20px;
+    }
+
+    #back, #clear {
+        margin: 5px;
     }
 }
 
