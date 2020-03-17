@@ -117,6 +117,10 @@ tr:nth-child(1) {
 
 /* small devices and less */
 @media screen and (max-width: 575px) {
+    h1 {
+        letter-spacing: 0;
+    }
+    
     .container {
         width: 80%;
     }
