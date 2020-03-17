@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <title>General Knowledge Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <a href="#" id="leaderboardLink">View Leaderboard</a>
+        <h3 id="time">Time: <span id="timer">0</span></h3>
+    </header>
 
+    <div class="container">
+        <!-- div for the starting page -->
+        <div id="titlePage">
+            <h1>General Knowledge Quiz</h1>
+            <p>How much general knowledge do you have? You have 75 seconds on the clock to try and answer the questions as fast as you can, the time left will be your score. But be careful, each time you answer a question wrong, 10 seconds will be taken off the clock!</p>
+            <button id="start" type="submit">Start</button>
+        </div>
+        <!-- div for questions -->
+        <div id="questionsPage" class="hide">
+            <!-- heading for the question -->
+            <h1 id="question"></h1>
+            <!-- buttons for all the answer options -->
+            <button id="optionOne" class="questionButton" type="submit"></button>
+            <button id="optionTwo" class="questionButton" type="submit"></button>
+            <button id="optionThree" class="questionButton" type="submit"></button>
+            <button id="optionFour" class="questionButton" type="submit"></button>
+            <!-- div for "correct" or "wrong" response -->
+            <div id="questionResponse" class="hide">
+                <hr>
+                <h3 id="response"></h3>
+            </div>
+        </div>
+        <!-- div for end page -->
+        <div id="endPage" class="hide">
+            <h1>All done!</h1>
+            <p>Your final score is <span id="finalScore"></span></p>
+            <input id="name" type="text" placeholder="Enter name" name="name">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+        <!-- div for leaderboard -->
+        <div id="leaderboardPage" class="hide">
+            <h1>Leaderboard</h1>
+            <table id="leaderboard">
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+            <div id="buttonContainer">
+                <button id="back">Go back</button>
+                <button id="clear">Clear Leaderboard</button>
+            </div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
