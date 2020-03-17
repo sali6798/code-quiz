@@ -1,0 +1,134 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("images/wall-murals-seamless-school-background.jpg.jpg");
+    color: white;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+}
+
+button {
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 0;
+}
+
+/* table headings row */
+tr:nth-child(1) {
+    background-color: rgb(95, 100, 100);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-width: 20px;
+    border-style: solid;
+    border-image: url("images/frame.png") 60;
+    background-image: url("images/dark-chalkboard_28629-1306.jpg");
+    background-size: cover;    
+    background-position: center;
+}
+
+.hide {
+    display: none;
+}
+
+.questionButton {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+
+
+#time, #leaderboardLink {
+    background-color: rgb(72, 180, 114);
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+#leaderboardLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#leaderboardLink:hover {
+    background-color: rgb(46, 114, 72);
+}
+
+#time {
+    margin: 0;
+    margin-left: auto;
+}
+
+#titlePage, #questionsPage, #endPage {
+    padding: 50px;
+}
+
+#leaderboardPage {
+    margin-top: 20px;
+}
+
+#leaderboard {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#buttonContainer, #start {
+    margin-top: 30px;
+    
+}
+
+#back, #clear {
+    margin: 20px;
+}
+
+/* medium devices and less */
+@media screen and (max-width: 767px) {
+    .questionButton {
+        width: 60%;
+    }
+}
+
+/* small devices and less */
+@media screen and (max-width: 575px) {
+    .container {
+        width: 80%;
+    }
+
+    .questionButton {
+        width: 90%;
+    }
+
+    #submit {
+        margin-top: 20px;
+    }
+}
+
+
